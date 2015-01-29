@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Problem 2 - SmartLAB Recruitment Drive </title>
+</head>
+<script language=JavaScript> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<body bgcolor="#FFFFFF" ondragstart="return false" onselectstart="return false">
+	<p> SmartLAB intends to develop a medication reminder application.
+		<br>
+		It should be a very flexible application which can handle a large variety of medicine schedules. e.g: Pill A - Day 1-3 : 3 times a day, Day 4-5: 2 times a day; Pill B - lifetime every morning 1 pill; Pill C - 1/4th pill in the morning, 3/4th in the night before food for 5 days, etc.
+	</p>
+	<ol>
+		<li>Design the application. [You may extend/modify the idea] Provide a description of the end user experience of your application.</li>
+		<li>Design an intuitive way to take user input for this application.</li>
+	</ol>
+	<br>	
+	<em>Note - This is a design question</em>
+	<hr>
+	<p> This question carries 15 marks </p><br>
+	<a href="problem3.html">Next</a><br>
+	<a href="index.html">Home</a>
+</body>
+</html>

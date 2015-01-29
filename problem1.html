@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Problem 1 - SmartLAB Recruitment Drive </title>
+</head>
+<script language=JavaScript> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<body bgcolor="#FFFFFF" ondragstart="return false" onselectstart="return false">
+	<p> <h4>PSUEDO - CODE </h4> </p>
+	X[1..N] is a set of positive integers. (array)
+	<br><br>
+		PROCEDURE( X[1..N] ):<br>
+		&nbsp&nbsp&nbsp&nbsp Step[1] -<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp j = 1<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp k = N - 1<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp m = X[N]<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp goto Step[2]<br><br>
+		&nbsp&nbsp&nbsp&nbsp Step[2] - <br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if k is 0<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp terminate<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp else<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp goto Step[3]<br><br>
+		&nbsp&nbsp&nbsp&nbsp Step[3] -<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if X[k] <= m<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp goto Step[5]<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp else<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp goto Step[4]<br><br>
+		&nbsp&nbsp&nbsp&nbsp Step[4] -<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp j = k<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp m = X[k]<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp goto Step[5]<br><br>
+		&nbsp&nbsp&nbsp&nbsp Step[5] - <br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp k = k-1<br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp goto Step[2]<br>
+	<hr>
+	<p>
+		<h4> Answer the following questions with regard to the above pseudo-code</h4>		
+	</p>
+	<p>
+		<ol>
+			<li> Justify why this procedure will always terminate in finite number of steps. </li>
+			<li> What is the output produced by the above procedure? </li>
+			<li> Write down the number of times each step will be executed as a function of N. </li>
+			<li> Provide a test case for which the algorithm will execute for: (a)Maximum number of steps (b)Minimum number of steps </li>
+			<li> Assuming that the input X[1..N] is some permutation of the set {1..N}, find out the   average number of times Step 4 is executed. [Hint: Each permutation of {1..N} is equally probable] </li>
+			<li> Does the answer for Q5 change, if X[1..N] is allowed to take any N distinct integer values ? </li>
+			<li> Implement the code for the above given procedure in your preferred programming language. </li>
+		</ol>
+	</p>
+	<hr>
+	<p> This question carries 15 marks </p><br>
+	<a href="problem2.html">Next</a><br>
+	<a href="index.html">Home</a>
+</body>
+</html>

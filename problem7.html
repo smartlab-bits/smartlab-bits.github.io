@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Problem 7 - SmartLAB Recruitment Drive </title>
+</head>
+<script language=JavaScript> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<body bgcolor="#FFFFFF" ondragstart="return false" onselectstart="return false">
+	<p>This question is divided into multiple parts.</p>
+	<ol>
+		<li><p>A C program (say test.c) when compiled using '$ gcc -o exe test.c'    generates an executable named 'exe' which can be called as '$ ./exe'. What does the './' mean? What happens when the call is '$ exe'? Also, where is the executable searched for when we use the latter form on a Linux system? </p></li>
+		<li><p>Cron jobs can be used for automating system tasks on Unix-like operating systems. Cron is driven by a crontab file. How would you edit this file for the current user (assume default shell is bash)? </p></li>
+		<li><p>Assume that you are editing the crontab, which did not exist already. Mention the line you will need to add to the file if you want to execute the program 'play' (available at the location you mentioned in answer to part (a) above) with parameter '/usr/share/sounds/alsa/Noise.wav' at 9:30 am every weekday of the month, every month a year.<p></li>
+		<li><p>Modify the above line so that the program executes within half an hour of 9:30 randomly (other conditions remain the same). </p></li>
+		<li><p>Modify the above line so that the program executes at 9:10 and 9:15 only.</p></li>
+		<li><p>Modify the above line so that the program does not execute when the user is on holiday (indicated by the presence of a file 'i_am_on_holiday' in the user's home directory). </p></li>
+		<li>Add another line to execute the program "getmail" with the "--quiet" option every five minutes on a running system (no other restrictions). </p></li>
+	</ol>
+	<p><em>Note - This is a comprehension question</em></p>
+	<hr>
+	<p> This question carries 20 marks </p><br>
+	<a href="index.html">Home</a>
+</body>
+</html>
